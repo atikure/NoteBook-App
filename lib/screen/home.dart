@@ -85,9 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             MyTextField(email: title, hint: "Enter Your Title"),
-                            MyTextField(
-                              email: details,
-                              hint: "Enter Your Details",
+                            MyTextField(email: details, hint: "Enter Your Details",
                             ),
                           ],
                         ),
@@ -139,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
             barrierDismissible: false,
             context: context,
             builder: (context) => AlertDialog(
-              title: MyTextWidget(titel: "Alert Dialogue"),
+              title: MyTextWidget(titel: "New Note Book"),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [

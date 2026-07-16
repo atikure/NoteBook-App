@@ -10,14 +10,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    //log("===111===");
     timerFun();
-    //log("===333===");
     super.initState();
   }
   Future<void> timerFun()async{
     await Future.delayed(Duration(seconds: 3)).then((v){
-      //log("===222===");
       Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
     });
 
