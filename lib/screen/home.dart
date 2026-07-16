@@ -119,6 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(width: 5,),
                 InkWell(
                   onTap: () {
+                    // remove
                     NoteData.note.removeAt(i);
                     setState(() {});
                   },
@@ -134,6 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: () async {
           title.clear();
           details.clear();
+          // clear
           showDialog(
             barrierDismissible: false,
             context: context,
